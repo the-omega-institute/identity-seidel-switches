@@ -1,0 +1,4 @@
+{"graph6":"B?","outcomes":["edge_count","edge_count","edge_count"],"qualifies":false}
+{"graph6":"BG","outcomes":["edge_count",[1,2,0],[1,0,2],"edge_count"],"qualifies":false}
+{"graph6":"Bo","outcomes":["edge_count",[1,2,0],[1,0,2],[1,0,2],[1,2,0]],"qualifies":true}
+{"graph6":"Bw","outcomes":["edge_count","edge_count","edge_count","edge_count","edge_count","edge_count"],"qualifies":false}

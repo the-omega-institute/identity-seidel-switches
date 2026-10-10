@@ -1,0 +1,68 @@
+{
+  "graph6": "ElMg",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "switch": [
+    3,
+    4
+  ],
+  "permutation": [
+    3,
+    2,
+    1,
+    5,
+    4,
+    0
+  ],
+  "H_vertices": [
+    0,
+    1,
+    2,
+    5
+  ],
+  "N_x_in_H": [
+    0,
+    2
+  ],
+  "H_minus_N_y": [
+    0,
+    1
+  ],
+  "obstruction": "The first set induces no edge; the second induces an edge."
+}

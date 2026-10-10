@@ -1,0 +1,40 @@
+{
+  "graph6": "BG",
+  "n": 3,
+  "edges": [
+    [
+      1,
+      2
+    ]
+  ],
+  "S": [
+    1
+  ],
+  "S_permutation": [
+    2,
+    1,
+    0
+  ],
+  "T": [
+    2
+  ],
+  "T_permutation": [
+    1,
+    0,
+    2
+  ],
+  "symmetric_difference": [
+    1,
+    2
+  ],
+  "original_degree_sequence": [
+    0,
+    1,
+    1
+  ],
+  "composed_degree_sequence": [
+    2,
+    2,
+    2
+  ]
+}

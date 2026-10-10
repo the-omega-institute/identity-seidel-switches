@@ -1,0 +1,72 @@
+[
+  {
+    "graph6": "Bo",
+    "n": 3,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "degree_sequence": [
+      1,
+      1,
+      2
+    ],
+    "switches": [
+      {
+        "vertices": [
+          1
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "vertices": [
+          2
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          0,
+          1
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          0,
+          2
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ]
+      }
+    ],
+    "regular": false,
+    "connected": true,
+    "bipartite": true,
+    "self_complementary": false,
+    "complement_qualifies": false,
+    "complementary_edge_cover": true,
+    "all_vertices_in_edge_iss": true
+  }
+]

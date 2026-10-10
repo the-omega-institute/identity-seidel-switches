@@ -1,0 +1,47 @@
+{
+  "3": {
+    "graphs": 4,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 18,
+    "positive_witnesses_rechecked": 6,
+    "qualifying": 1,
+    "all_labelled_graphs_covered": 8
+  },
+  "4": {
+    "graphs": 11,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 77,
+    "positive_witnesses_rechecked": 13,
+    "qualifying": 3,
+    "all_labelled_graphs_covered": 64
+  },
+  "5": {
+    "graphs": 34,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 340,
+    "positive_witnesses_rechecked": 48,
+    "qualifying": 3,
+    "all_labelled_graphs_covered": 1024
+  },
+  "6": {
+    "graphs": 156,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 2106,
+    "positive_witnesses_rechecked": 178,
+    "qualifying": 11
+  },
+  "7": {
+    "graphs": 1044,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 18270,
+    "positive_witnesses_rechecked": 846,
+    "qualifying": 10
+  },
+  "8": {
+    "graphs": 12346,
+    "pairwise_nonisomorphic": true,
+    "switches_rechecked": 271612,
+    "positive_witnesses_rechecked": 6188,
+    "qualifying": 35
+  }
+}

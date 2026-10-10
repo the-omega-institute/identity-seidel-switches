@@ -1,0 +1,217 @@
+[
+  {
+    "graph6": "CF",
+    "n": 4,
+    "edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "degree_sequence": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "switches": [
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          3,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          3
+        ],
+        "permutation": [
+          0,
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    ],
+    "regular": false,
+    "connected": true,
+    "bipartite": true,
+    "self_complementary": false,
+    "complement_qualifies": false,
+    "complementary_edge_cover": true,
+    "all_vertices_in_edge_iss": true
+  },
+  {
+    "graph6": "CN",
+    "n": 4,
+    "edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "degree_sequence": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "switches": [
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          3,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          2
+        ],
+        "permutation": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    ],
+    "regular": false,
+    "connected": true,
+    "bipartite": false,
+    "self_complementary": false,
+    "complement_qualifies": false,
+    "complementary_edge_cover": false,
+    "all_vertices_in_edge_iss": true
+  },
+  {
+    "graph6": "Cl",
+    "n": 4,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "degree_sequence": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "switches": [
+      {
+        "vertices": [
+          0,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          2
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "vertices": [
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    ],
+    "regular": true,
+    "connected": true,
+    "bipartite": true,
+    "self_complementary": false,
+    "complement_qualifies": false,
+    "complementary_edge_cover": true,
+    "all_vertices_in_edge_iss": true
+  }
+]

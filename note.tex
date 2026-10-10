@@ -1,0 +1,270 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\ISS}{\mathrm{ISS}}
+\newcommand{\dd}{\delta}
+\newcommand{\DD}{\Delta}
+\title{Graphs covered by vertex and edge identity Seidel switches}
+\author{Haobo Ma\\{\small ChronoAI Pte Ltd; The Omega Institute}
+\and Wenlin Zhang\\{\small National University of Singapore; The Omega Institute}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study finite simple graphs in which every vertex belongs to an identity
+Seidel switch consisting of a singleton or the endpoints of an edge.
+We prove that every such graph of order $n\geq3$ is connected and has
+minimum and maximum degrees satisfying $\delta+\Delta=n$.
+Consequently the property is incompatible with complementation and with
+self-complementarity. We characterize the bipartite members as the complete
+bipartite graphs and give an exact local characterization of the regular
+members, together with infinite constructions. An exhaustive enumeration
+through order eight gives respectively $1,3,3,11,10,35$ isomorphism classes,
+with explicit certificates for every successful singleton and edge switch.
+A three-vertex example shows that identity switches need not be closed
+under composition.
+\end{abstract}
+
+\section{Switches and the cut identity}
+Let $G=(V,E)$ be a finite simple graph of order $n$. For $S\subseteq V$,
+the Seidel switch $G^S$ complements precisely the adjacencies between $S$
+and $V\setminus S$. Following Gervacio~\cite{gervacio}, $S$ is an
+\emph{identity Seidel switch} (ISS) if $G^S\cong G$. A singleton ISS is a
+vertex-ISS; an edge-ISS is an ISS $\{x,y\}$ with $xy\in E$. We call $G$
+\emph{covered} if every vertex belongs to a vertex-ISS or an edge-ISS.
+All isomorphisms below may permute the entire vertex set.
+
+Write $e_G(S,V\setminus S)$ for the number of edges crossing the cut.
+\begin{proposition}\label{cut}
+For every $S\subseteq V$,
+\[
+ |E(G^S)|-|E(G)|=|S|(n-|S|)-2e_G(S,V\setminus S).
+\]
+In particular, a vertex-ISS $v$ satisfies $2\deg_G(v)=n-1$, and an
+edge-ISS $xy$ satisfies $\deg_G(x)+\deg_G(y)=n$.
+\end{proposition}
+\begin{proof}
+There are $|S|(n-|S|)$ potential cut edges. Switching removes the
+$e_G(S,V\setminus S)$ present ones and adds the remaining ones; all other
+edges are unchanged. Isomorphism implies equality of edge counts.
+For $S=\{v\}$ the cut has size $\deg_G(v)$. For an edge $xy$ and
+$S=\{x,y\}$ its size is $\deg_G(x)+\deg_G(y)-2$, so the identity gives
+$2(n-2)=2(\deg_G(x)+\deg_G(y)-2)$.
+\end{proof}
+For a nonadjacent pair the corresponding necessary degree sum is $n-2$.
+The adjacency requirement in the definition of edge-ISS is therefore
+substantive.
+
+\begin{proposition}\label{singletons}
+A nonempty graph has every vertex a vertex-ISS if and only if $n=1$.
+\end{proposition}
+\begin{proof}
+The singleton case is immediate. Otherwise Proposition~\ref{cut} makes
+$G$ regular of degree $d=(n-1)/2>0$. Choose an edge $vw$. Switching at
+$v$ lowers the degree of $w$ to $d-1$, whereas every graph isomorphic to
+$G$ is $d$-regular. This is a contradiction.
+\end{proof}
+This answers Problem 6.1 of~\cite{gervacio} and explains the need to
+allow edge-ISS in the covering question.
+
+\section{Restrictions and two characterizations}
+\begin{theorem}\label{extremes}
+If $G$ is covered and $n\geq3$, then
+\[
+ \delta(G)+\Delta(G)=n.
+\]
+Moreover, $G$ is connected, its complement is not covered, and $G$ is
+not self-complementary.
+\end{theorem}
+\begin{proof}
+Put $h=(n-1)/2$, $\delta=\delta(G)$ and $\Delta=\Delta(G)$.
+Any vertex whose degree differs from $h$ must belong to an edge-ISS,
+and thus has a neighbor of degree $n-\deg_G(v)$.
+If $\Delta\leq h$, a vertex of degree less than $h$ would require a
+neighbor of degree greater than $h$. Thus all vertices would have degree
+$h$. No edge could then be an edge-ISS, since its degree sum would be
+$n-1$. Coverage would make all vertices vertex-ISS, contradicting
+Proposition~\ref{singletons}. Therefore $\Delta>h$.
+
+A maximum-degree vertex belongs to an edge-ISS, giving
+$\delta\leq n-\Delta$. If $\delta\ne h$, a minimum-degree vertex
+also belongs to an edge-ISS, giving $n-\delta\leq\Delta$.
+If $\delta=h$, then $n$ is odd and the integer $\Delta>h$ satisfies
+$\Delta\geq h+1=n-\delta$. In both cases $\delta+\Delta=n$.
+
+If $G$ were disconnected, the component containing a maximum-degree
+vertex would have at least $\Delta+1$ vertices and any other component
+at least $\delta+1$. Their total would exceed $n$.
+Finally,
+\[
+ \delta(\overline G)+\Delta(\overline G)
+ =2(n-1)-(\delta+\Delta)=n-2,
+\]
+so $\overline G$ cannot be covered. Since coverage is invariant under
+isomorphism, $G$ cannot be self-complementary.
+\end{proof}
+
+Call adjacent vertices $x,y$ \emph{complementary outside the pair} if
+every other vertex is adjacent to exactly one of them.
+\begin{theorem}\label{regular}
+A regular graph $G$ of order $n\geq3$ is covered if and only if $n$ is
+even, its degree is $n/2$, and every vertex has an adjacent vertex
+complementary outside the pair. In a regular covered graph these pairs
+are exactly the edge-ISS.
+\end{theorem}
+\begin{proof}
+For a regular covered graph Theorem~\ref{extremes} gives $2d=n$.
+There are no vertex-ISS, by Proposition~\ref{cut}. Suppose $xy$ is an
+edge-ISS. For $w\notin\{x,y\}$, let $c_w$ be the number of its neighbors
+in $\{x,y\}$. After switching, its degree is $d+2-2c_w$. The switched
+graph must still be $d$-regular, so $c_w=1$.
+Conversely, whenever $x,y$ are complementary outside the pair, the
+transposition $(x\ y)$, fixing every other vertex, is an isomorphism
+$G^{\{x,y\}}\to G$. Such pairs covering all vertices therefore imply
+coverage. This sufficiency holds without regularity.
+\end{proof}
+
+\begin{theorem}\label{bipartite}
+The bipartite covered graphs of order $n\geq3$ are exactly
+$K_{a,b}$ with $a,b\geq1$ and $a+b=n$.
+\end{theorem}
+\begin{proof}
+By Theorem~\ref{extremes}, a bipartite covered graph has a bipartition
+$A\cup B$ with $1\leq a=|A|\leq b=|B|$. An edge-ISS $xy$ with
+$x\in A$, $y\in B$ has degree sum $a+b$, so the bounds
+$\deg(x)\leq b$ and $\deg(y)\leq a$ are both attained.
+Take any $v\in B$. If it belongs to an edge-ISS, it has degree $a$.
+Otherwise it is a vertex-ISS, of degree $(n-1)/2\leq a\leq\lfloor n/2\rfloor$;
+this is possible only for odd $n$ and $a=(n-1)/2$, again giving degree
+$a$. Every vertex in $B$ is therefore adjacent to all of $A$.
+Conversely, every cross-part pair in $K_{a,b}$ is complementary outside
+the pair, so every edge is an edge-ISS.
+\end{proof}
+
+\section{Constructions and the irregular case}
+For each $m\geq2$, partition $2m$ vertices into adjacent pairs
+$\{a_i,b_i\}$, $1\leq i\leq m$. Between every two pairs choose either
+of the two perfect matchings, independently. Each vertex has degree $m$,
+and $a_i,b_i$ are complementary outside their pair. This constructs
+regular covered graphs of every even order at least four. Choices include
+$K_{m,m}$ and the graph consisting of two copies of $K_m$ joined by a
+perfect matching. The latter gives the triangular prism when $m=3$.
+
+More generally, suppose every vertex of a graph has a neighbor
+complementary outside the pair. Replace each vertex $u$ by a nonempty
+independent set $I_u$, with all edges between $I_u$ and $I_v$ precisely
+when $uv$ was an edge. For complementary adjacent $u,v$, every pair
+$x\in I_u$, $y\in I_v$ is again complementary outside the pair:
+other vertices in these two sets see exactly one endpoint, and all
+remaining sets inherit the original property. Thus arbitrary positive
+independent-set blow-ups preserve this sufficient condition and give
+irregular covered graphs as well.
+
+The sufficient condition is not necessary for irregular graphs. The paw,
+with edges $03,12,13,23$, is covered by $\{0,3\}$ and $\{1,2\}$;
+the transposition $(0\ 3)$ certifies both switches. The pair $1,2$ has
+both a common neighbor and a common nonneighbor, and neither of these
+vertices has a complementary neighbor. The house, with edges
+$01,03,04,12,23,34$, needs a singleton in its cover: its successful
+switches are exactly $\{4\}$, $\{0,1\}$ and $\{2,3\}$.
+
+Theorems~\ref{regular} and~\ref{bipartite} characterize two subclasses
+for all orders. A characterization of the remaining irregular,
+nonbipartite graphs remains open. The extremal degree identity alone does not characterize coverage.
+For example, take $K_{1,4}$ with center $4$ and add the edge $01$.
+Its degree sequence is $1,1,2,2,4$, so $\delta+\Delta=5$.
+The vertex $0$ has no neighbor of the required degree $3$ for an
+edge-ISS. Switching at $0$ changes the degree sequence to $1,2,2,2,3$,
+so $0$ is not a vertex-ISS either.
+
+\section{Certified enumeration}
+We tested every singleton and every adjacent pair in every simple graph
+up to isomorphism for $3\leq n\leq8$. The input consists of the
+Read--Wilson graph atlas~\cite{atlas}, as distributed by NetworkX for
+orders at most seven, and McKay's catalogue~\cite{mckay} at order eight.
+The results are:
+\begin{center}
+\begin{tabular}{rrrrrr}
+\toprule
+$n$ & All graphs & Switches tested & Covered & Regular & Bipartite\\
+\midrule
+3 & 4 & 18 & 1 & 0 & 1\\
+4 & 11 & 77 & 3 & 1 & 2\\
+5 & 34 & 340 & 3 & 0 & 2\\
+6 & 156 & 2106 & 11 & 2 & 3\\
+7 & 1044 & 18270 & 10 & 0 & 3\\
+8 & 12346 & 271612 & 35 & 3 & 4\\
+\bottomrule
+\end{tabular}
+\end{center}
+At orders three through five the members are $K_{1,2}$;
+$K_{1,3}$, the paw and $C_4$; and $K_{1,4}$, the house and $K_{2,3}$,
+respectively. The regular members of order six are $K_{3,3}$ and the
+triangular prism. At orders five and seven, respectively one and six
+covered graphs have a vertex belonging to no edge-ISS, so the singleton
+option enlarges the class.
+
+For each input graph the computation records a decision for every tested
+switch. The cut identity and degree multiset give exact rejection tests;
+remaining cases use exhaustive graph isomorphism. Every successful switch
+has a stored permutation $p$, with the convention
+\[
+ uv\in E(G^S)\quad\Longleftrightarrow\quad p(u)p(v)\in E(G).
+\]
+The accompanying data include graph6 representatives, edge lists and all
+such certificates for the covered graphs. A separate standard-library
+checker decodes the graphs, toggles the cut and independently searches all
+compatible bijections for every tested switch. It also checks every
+certificate and verifies pairwise nonisomorphism of the input graphs.
+Catalogue completeness through order five is additionally checked by
+matching every labelled graph to a representative. For orders six through
+eight, completeness uses the cited catalogues; the distinct representative
+counts agree with the established counts.
+
+\section{Composition and source distinctions}
+Let $G$ have vertices $0,1,2$ and the sole edge $12$. Switching at $1$
+gives the sole edge $01$, with certificate $(0\ 2)$; switching at $2$
+gives the sole edge $02$, with certificate $(0\ 1)$. Both singletons
+are ISS. Their composition is the switch by $\{1,2\}$, which gives
+$K_3$ and hence is not an ISS. Thus the ISS family need not be closed
+under symmetric difference, even modulo complementary switch sets.
+No smaller graph has this failure: for order one all switches are
+trivial, and for order two a singleton changes the edge count.
+
+The switch operators themselves do satisfy
+$(G^S)^T=G^{S\mathbin{\triangle}T}$. The failure arises because an
+isomorphism witnessing $G^S\cong G$ may move the labels of $T$.
+The first version of~\cite{gervacio} asserts that all ISS form a group; that assertion is false, and no such assertion is used here.
+
+There is a further distinction relevant to structural characterization.
+The paw above contradicts the neighborhood-partition assertion of
+Lemma 5.2 in that version. Nor can an isomorphism always be chosen to
+exchange the switched endpoints and preserve their complement, as used
+in Theorem 5.3 there. For example, take the graph with edges
+\[
+ 01,03,05,12,23,24,25,34,45.
+\]
+The switch by $\{3,4\}$ has certificate
+$p=(3,2,1,5,4,0)$, where the tuple lists the images of $0,\ldots,5$.
+On the remaining vertices the induced graph is the cycle $0,1,2,5,0$.
+The neighborhood of $3$ there is $\{0,2\}$, a nonedge, whereas the
+complement of the neighborhood of $4$ there is $\{0,1\}$, an edge.
+No automorphism of this cycle maps the first set to the second.
+The cut proof and the unrestricted isomorphism searches above avoid
+these assumptions.
+
+\begin{thebibliography}{9}
+\bibitem{gervacio} S. V. Gervacio, \emph{On identity Seidel switches},
+arXiv:2601.04530v1, 2026. \url{https://arxiv.org/abs/2601.04530v1}.
+\bibitem{atlas} R. C. Read and R. J. Wilson, \emph{An Atlas of Graphs},
+Oxford University Press, 1998.
+\bibitem{mckay} B. D. McKay, \emph{Graphs}, small graph data catalogue,
+\url{https://users.cecs.anu.edu.au/~bdm/data/graphs.html}.
+\end{thebibliography}
+\end{document}

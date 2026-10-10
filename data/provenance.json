@@ -1,0 +1,32 @@
+{
+  "python": "3.10.20",
+  "networkx": "3.4.2",
+  "inputs": {
+    "all_n3.g6": {
+      "sha256": "ad734c7f1aa188ac62d0ba1b2c514d019e1e2602e846f9bcc471f5850e392ab8",
+      "source": "NetworkX graph_atlas_g (Read-Wilson atlas)"
+    },
+    "all_n4.g6": {
+      "sha256": "204bfcb4c55a445224ed77b69b8bc648eb6bfd6b71fe29bb77ba31ef75067673",
+      "source": "NetworkX graph_atlas_g (Read-Wilson atlas)"
+    },
+    "all_n5.g6": {
+      "sha256": "6d2822f724f5b5213bcef73d91963e9510c4159e9cae15951d3d699d40c1659e",
+      "source": "NetworkX graph_atlas_g (Read-Wilson atlas)"
+    },
+    "all_n6.g6": {
+      "sha256": "f85812bc936feefd5972b1c3cddc7b138a31c1224256883b541146d780a68b12",
+      "source": "NetworkX graph_atlas_g (Read-Wilson atlas)"
+    },
+    "all_n7.g6": {
+      "sha256": "811b507699101ae6adeddd595c4d5643b0b6f3188b5738c374b4874df06ab97d",
+      "source": "NetworkX graph_atlas_g (Read-Wilson atlas)"
+    },
+    "all_n8.g6": {
+      "sha256": "546a249902101c97d3aa590f93e53366854bd0a6f405aa59bdb32d25c57f845a",
+      "source": "https://users.cecs.anu.edu.au/~bdm/data/graph8.g6"
+    }
+  },
+  "certificate_convention": "p[i] is the image of vertex i under an isomorphism G^S -> G",
+  "audit_order": "singletons 0..n-1, then original edges in lexicographic order"
+}
