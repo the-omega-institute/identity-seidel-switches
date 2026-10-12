@@ -1,0 +1,82 @@
+[
+  {
+    "name": "mckay-graphs.html",
+    "url": "https://users.cecs.anu.edu.au/~bdm/data/graphs.html",
+    "retrieved_at": "2026-10-12T06:03:43.905514+00:00",
+    "status": 200,
+    "final_url": "https://users.cecs.anu.edu.au/~bdm/data/graphs.html",
+    "bytes": 25607,
+    "sha256": "0da081832a6792c23b9764c7dfc8576a52fd848402c7f3a63d258c5d879d29fa"
+  },
+  {
+    "name": "graph8.g6",
+    "url": "https://users.cecs.anu.edu.au/~bdm/data/graph8.g6",
+    "retrieved_at": "2026-10-12T06:03:44.921993+00:00",
+    "status": 200,
+    "final_url": "https://users.cecs.anu.edu.au/~bdm/data/graph8.g6",
+    "bytes": 86422,
+    "sha256": "546a249902101c97d3aa590f93e53366854bd0a6f405aa59bdb32d25c57f845a",
+    "matches_supplied_bytes": true
+  },
+  {
+    "name": "graph9.g6",
+    "url": "https://users.cecs.anu.edu.au/~bdm/data/graph9.g6",
+    "retrieved_at": "2026-10-12T06:03:46.285928+00:00",
+    "status": 200,
+    "final_url": "https://users.cecs.anu.edu.au/~bdm/data/graph9.g6",
+    "bytes": 2197344,
+    "sha256": "839f67ecc73b1f539128694badebe27adf4f0fb1ee6d0663b7ad9868100d5123",
+    "matches_supplied_bytes": true
+  },
+  {
+    "name": "networkx-atlas.html",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.atlas.graph_atlas_g.html",
+    "retrieved_at": "2026-10-12T06:03:48.918192+00:00",
+    "status": 200,
+    "final_url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.atlas.graph_atlas_g.html",
+    "bytes": 52113,
+    "sha256": "6061befb3bf240296e5db88de5193fe8a33821c3e31458aae1b2cda4c91af91f"
+  },
+  {
+    "name": "networkx-atlas-source.html",
+    "url": "https://networkx.org/documentation/stable/_modules/networkx/generators/atlas.html",
+    "retrieved_at": "2026-10-12T06:03:50.544165+00:00",
+    "status": 200,
+    "final_url": "https://networkx.org/documentation/stable/_modules/networkx/generators/atlas.html",
+    "bytes": 36166,
+    "sha256": "8de885cfebca9806ad363b5dab137aeb2d959b88c7510c33448f7e92bf201eae"
+  },
+  {
+    "name": "oup-atlas.html",
+    "url": "https://global.oup.com/academic/product/an-atlas-of-graphs-9780198532897",
+    "retrieved_at": "2026-10-12T06:03:50.985841+00:00",
+    "status": 202,
+    "final_url": "https://global.oup.com/academic/product/an-atlas-of-graphs-9780198532897",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "arxiv-2601.04530v1.html",
+    "url": "https://arxiv.org/abs/2601.04530v1",
+    "retrieved_at": "2026-10-12T06:03:52.880372+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2601.04530v1",
+    "bytes": 39856,
+    "sha256": "15318e6c92027d1f151879079cb2137b91a0fdadb10b8fb2176ffb9a7173fe11"
+  },
+  {
+    "name": "gervacio-v1.pdf",
+    "url": "https://arxiv.org/pdf/2601.04530v1",
+    "retrieved_at": "2026-10-12T06:03:54.011457+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/pdf/2601.04530v1",
+    "bytes": 253906,
+    "sha256": "11cb76330ca90edf5b107e0bc4a6a40f9eb092502369121db456e7bc30a18fee",
+    "matches_supplied_bytes": true
+  },
+  {
+    "name": "atlas-3.4.2.dat.gz",
+    "url": "https://raw.githubusercontent.com/networkx/networkx/networkx-3.4.2/networkx/generators/atlas.dat.gz",
+    "sha256": "73fc416df0164923607751cb759f4ae81deb5f6550bf25be59c86de3b747e41d"
+  }
+]

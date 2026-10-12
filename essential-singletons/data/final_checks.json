@@ -1,0 +1,99 @@
+{
+  "historical_note_review": {
+    "verdict": "fixable gaps fixed; all-order proofs and finite counts correct",
+    "pdf_pages": 5,
+    "pdf_compile_warnings": 0,
+    "all_pages_visually_inspected": true,
+    "byline_preserved": true,
+    "note_sha256": {
+      "note.tex": "5d3d38a94ec13c424f3c245303e05d34f9b2d15c0a3c217271eeb1cfa7941467",
+      "note.pdf": "377f63b0fa5f7d47147bf8731dd490f078cc51d6a6394420e994feb6165abcb1"
+    },
+    "scope": "Prior review of the unchanged note; PDF compilation and visual inspection are historical attestations, not part of the numerical rerun."
+  },
+  "historical_uncovered_order21_example": {
+    "status": "Not rerun: the original graph input is absent from this checkout. This example is not used in the note.",
+    "result": {
+      "covered": false,
+      "singleton_0_fixable": false,
+      "U": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "W": [
+        0,
+        1
+      ]
+    }
+  },
+  "numerical_rerun": {
+    "reviewed_catalogues_and_certificates_reproduced": true,
+    "orders": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "covered": [
+      1,
+      3,
+      3,
+      11,
+      10,
+      35,
+      33
+    ],
+    "exactly_one_essential_singleton": [
+      0,
+      0,
+      1,
+      0,
+      6,
+      0,
+      16
+    ],
+    "essential_cases_all_switching_isomorphisms_fix_vertex": 23,
+    "transport_lemma_checks": 1757,
+    "labelled_construction_bases_checked": 1098
+  },
+  "sha256": {
+    "note.tex": "5d3d38a94ec13c424f3c245303e05d34f9b2d15c0a3c217271eeb1cfa7941467",
+    "note.pdf": "377f63b0fa5f7d47147bf8731dd490f078cc51d6a6394420e994feb6165abcb1",
+    "README.md": "dee353c67dd2952897078054fe7d83a0e4fc730ed45f0bc32c88d37f1e802460",
+    "scripts/check_atlas.py": "a3eba5158f649561cc220ed3d13050841f79d22f25bceaebdf049ef2999e1200",
+    "scripts/check_sources.py": "1cd3e676de639b74f2331499e68d41650892ec9b0936b6d7acc5d55d100d31ec",
+    "scripts/independent_review.py": "382a8b474825dd4f60b0059d6da29f18665faf7b3374530ba0e0ac00714845b6",
+    "scripts/inputs.py": "41b5abff465e1219d62f1be40f9a67d55084228c1b698cc56dda61d08dd30eeb",
+    "scripts/reproduce.py": "ee4ca96b86229e7d465f2d75f4238048f82f128f11d02e5ef8226f72f7f29d73",
+    "data/atlas_and_certificates.json": "6cdbbd40ee53f1a31cadfae544716319ac54392379c088c0612410c31474ec64",
+    "data/covered_n1.json": "68d18fdce586f36421a06f36e8fe42469f03f65d181c1901309f708e2242b422",
+    "data/covered_n2.json": "5856d3c9cf44f97a7f8370665534a9c9fc94bfe745f421518b4fecd1720e5d5a",
+    "data/covered_n3.json": "980ad2886bd0f308973b47d8eba009d9e4be4f45820ef41b27f4cf25a623f3c5",
+    "data/covered_n4.json": "f74c245c9161322abd57cbbc7d4f22963b029e13da9802f484dce029c49fe42c",
+    "data/covered_n5.json": "e5837f1f310a6ffb53b843a4940a0f2d6c0cec325b79e56a2468909d706e4b8d",
+    "data/covered_n6.json": "034d047240ff78e89ed7dbe7762f500fa2c9869d4e889fbd1650307a43e88ef8",
+    "data/covered_n7.json": "97ada03b80200734ea0a625ac7efb73f2797f619193d6844e559d9ad5d453207",
+    "data/covered_n8.json": "0f46c42f942b41121b833d7f6e6a85192cfc1694969ed5a43f36fa78292551af",
+    "data/covered_n9.json": "a5b7eba68a9952a872f602ba487149590e00d804b8bb1cc6b257e1e8ad76d5d5",
+    "data/independent_review.json": "1021f8ad9ec72ff676e987094d1938f2e2d80d31e21f50ea21fa8b7acbca5edc",
+    "data/sources.json": "eb626bb597d7eee5cf1d7ced8622546d603153fa50743ef0a6b19d620672ac48"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "atlas_source": "https://raw.githubusercontent.com/networkx/networkx/networkx-3.4.2/networkx/generators/atlas.dat.gz",
+  "atlas_sha256": "73fc416df0164923607751cb759f4ae81deb5f6550bf25be59c86de3b747e41d",
+  "atlas_graph_count": 1253,
+  "matches_supplied_orders": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "order9_stored_essential_switch_lists_checked": 16,
+  "order7_family_identifications_verified": true
+}

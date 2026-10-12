@@ -29,6 +29,10 @@ Every qualifying graph is connected and satisfies `minimum degree + maximum degr
 - `data/nonclosure.json`: minimal counterexample to closure under composition.
 - `data/endpoint_exchange_counterexample.json`: counterexample to the endpoint-exchange condition in the source's Theorem 5.3.
 
+## Essential singleton follow-up
+
+The [essential-singletons package](essential-singletons/README.md) contains the reviewed follow-up note on vertices that require singleton switches, an infinite construction, and exhaustive results through order nine. Its standard-library checker uses the local graph catalogues and checksum-verified downloads; the package README distinguishes proved results, finite evidence, and open questions and gives the complete reproduction command.
+
 ## Reproduce
 
 Python 3.10 or later is sufficient. The enumerator uses NetworkX 3.4.2. All scripts run sequentially in one process; no workers are created.

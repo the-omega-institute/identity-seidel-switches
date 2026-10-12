@@ -1,0 +1,690 @@
+{
+  "implementation": "independent bitset decoder, switch, static-domain exact bijection search; no original modules",
+  "catalogues": [
+    {
+      "n": 1,
+      "input_classes": 1,
+      "switch_decisions": 1,
+      "positive_switches": 1,
+      "covered": 1,
+      "U_histogram": {
+        "1": 1
+      }
+    },
+    {
+      "n": 2,
+      "input_classes": 2,
+      "switch_decisions": 5,
+      "positive_switches": 1,
+      "covered": 1,
+      "U_histogram": {
+        "0": 1
+      }
+    },
+    {
+      "n": 3,
+      "input_classes": 4,
+      "switch_decisions": 18,
+      "positive_switches": 6,
+      "covered": 1,
+      "U_histogram": {
+        "0": 1
+      },
+      "input_sha256": "ad734c7f1aa188ac62d0ba1b2c514d019e1e2602e846f9bcc471f5850e392ab8"
+    },
+    {
+      "n": 4,
+      "input_classes": 11,
+      "switch_decisions": 77,
+      "positive_switches": 13,
+      "covered": 3,
+      "U_histogram": {
+        "0": 3
+      },
+      "input_sha256": "204bfcb4c55a445224ed77b69b8bc648eb6bfd6b71fe29bb77ba31ef75067673"
+    },
+    {
+      "n": 5,
+      "input_classes": 34,
+      "switch_decisions": 340,
+      "positive_switches": 48,
+      "covered": 3,
+      "U_histogram": {
+        "0": 2,
+        "1": 1
+      },
+      "input_sha256": "6d2822f724f5b5213bcef73d91963e9510c4159e9cae15951d3d699d40c1659e"
+    },
+    {
+      "n": 6,
+      "input_classes": 156,
+      "switch_decisions": 2106,
+      "positive_switches": 178,
+      "covered": 11,
+      "U_histogram": {
+        "0": 11
+      },
+      "input_sha256": "f85812bc936feefd5972b1c3cddc7b138a31c1224256883b541146d780a68b12"
+    },
+    {
+      "n": 7,
+      "input_classes": 1044,
+      "switch_decisions": 18270,
+      "positive_switches": 846,
+      "covered": 10,
+      "U_histogram": {
+        "0": 4,
+        "1": 6
+      },
+      "input_sha256": "811b507699101ae6adeddd595c4d5643b0b6f3188b5738c374b4874df06ab97d"
+    },
+    {
+      "n": 8,
+      "input_classes": 12346,
+      "switch_decisions": 271612,
+      "positive_switches": 6188,
+      "covered": 35,
+      "U_histogram": {
+        "0": 35
+      },
+      "input_sha256": "546a249902101c97d3aa590f93e53366854bd0a6f405aa59bdb32d25c57f845a"
+    },
+    {
+      "n": 9,
+      "input_classes": 274668,
+      "switch_decisions": 7416036,
+      "positive_switches": 74628,
+      "covered": 33,
+      "U_histogram": {
+        "0": 17,
+        "1": 16
+      },
+      "input_sha256": "839f67ecc73b1f539128694badebe27adf4f0fb1ee6d0663b7ad9868100d5123"
+    }
+  ],
+  "essential": [
+    {
+      "graph6": "@",
+      "n": 1,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        0
+      ],
+      "brute_permutations": 1
+    },
+    {
+      "graph6": "Dlc",
+      "n": 5,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 2,
+      "fixing": 2,
+      "permutation": [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      "brute_permutations": 120
+    },
+    {
+      "graph6": "FcBzo",
+      "n": 7,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 4,
+      "fixing": 4,
+      "permutation": [
+        0,
+        2,
+        1,
+        4,
+        3,
+        6,
+        5
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "FfxbO",
+      "n": 7,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        0,
+        2,
+        1,
+        5,
+        6,
+        3,
+        4
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "FllHo",
+      "n": 7,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        0,
+        5,
+        4,
+        6,
+        2,
+        1,
+        3
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "FBfnO",
+      "n": 7,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 4,
+      "fixing": 4,
+      "permutation": [
+        0,
+        5,
+        6,
+        4,
+        3,
+        1,
+        2
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "F`urg",
+      "n": 7,
+      "v": 2,
+      "W": [
+        2
+      ],
+      "U": [
+        2
+      ],
+      "isomorphisms": 6,
+      "fixing": 6,
+      "permutation": [
+        3,
+        5,
+        2,
+        1,
+        6,
+        4,
+        0
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "FHN]w",
+      "n": 7,
+      "v": 1,
+      "W": [
+        1
+      ],
+      "U": [
+        1
+      ],
+      "isomorphisms": 4,
+      "fixing": 4,
+      "permutation": [
+        2,
+        1,
+        0,
+        5,
+        6,
+        3,
+        4
+      ],
+      "brute_permutations": 5040
+    },
+    {
+      "graph6": "H??FFz}",
+      "n": 9,
+      "v": 6,
+      "W": [
+        6
+      ],
+      "U": [
+        6
+      ],
+      "isomorphisms": 36,
+      "fixing": 36,
+      "permutation": [
+        3,
+        4,
+        5,
+        0,
+        1,
+        2,
+        6,
+        8,
+        7
+      ]
+    },
+    {
+      "graph6": "H?bmvrx",
+      "n": 9,
+      "v": 1,
+      "W": [
+        1
+      ],
+      "U": [
+        1
+      ],
+      "isomorphisms": 8,
+      "fixing": 8,
+      "permutation": [
+        7,
+        1,
+        5,
+        6,
+        8,
+        2,
+        3,
+        0,
+        4
+      ]
+    },
+    {
+      "graph6": "H?ou^jy",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 4,
+      "fixing": 4,
+      "permutation": [
+        2,
+        3,
+        0,
+        1,
+        4,
+        6,
+        5,
+        8,
+        7
+      ]
+    },
+    {
+      "graph6": "H?qnfr{",
+      "n": 9,
+      "v": 1,
+      "W": [
+        1
+      ],
+      "U": [
+        1
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        8,
+        1,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "graph6": "H?rvfrw",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 32,
+      "fixing": 32,
+      "permutation": [
+        2,
+        3,
+        0,
+        1,
+        4,
+        7,
+        8,
+        5,
+        6
+      ]
+    },
+    {
+      "graph6": "H?zvfbw",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 36,
+      "fixing": 36,
+      "permutation": [
+        5,
+        6,
+        7,
+        8,
+        4,
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "graph6": "HCRfby}",
+      "n": 9,
+      "v": 0,
+      "W": [
+        0
+      ],
+      "U": [
+        0
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        0,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        8,
+        7
+      ]
+    },
+    {
+      "graph6": "HCRuvrx",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 4,
+      "fixing": 4,
+      "permutation": [
+        7,
+        5,
+        6,
+        8,
+        4,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "graph6": "HCRvTxy",
+      "n": 9,
+      "v": 2,
+      "W": [
+        2
+      ],
+      "U": [
+        2
+      ],
+      "isomorphisms": 8,
+      "fixing": 8,
+      "permutation": [
+        5,
+        6,
+        2,
+        7,
+        8,
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "graph6": "HCZvfQ]",
+      "n": 9,
+      "v": 3,
+      "W": [
+        3
+      ],
+      "U": [
+        3
+      ],
+      "isomorphisms": 8,
+      "fixing": 8,
+      "permutation": [
+        4,
+        5,
+        6,
+        3,
+        0,
+        1,
+        2,
+        8,
+        7
+      ]
+    },
+    {
+      "graph6": "HCpfNp}",
+      "n": 9,
+      "v": 5,
+      "W": [
+        5
+      ],
+      "U": [
+        5
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        6,
+        4,
+        3,
+        2,
+        1,
+        5,
+        0,
+        8,
+        7
+      ]
+    },
+    {
+      "graph6": "HCrbfh^",
+      "n": 9,
+      "v": 3,
+      "W": [
+        3
+      ],
+      "U": [
+        3
+      ],
+      "isomorphisms": 2,
+      "fixing": 2,
+      "permutation": [
+        4,
+        7,
+        6,
+        3,
+        0,
+        8,
+        2,
+        1,
+        5
+      ]
+    },
+    {
+      "graph6": "HCrfbg~",
+      "n": 9,
+      "v": 3,
+      "W": [
+        3
+      ],
+      "U": [
+        3
+      ],
+      "isomorphisms": 1,
+      "fixing": 1,
+      "permutation": [
+        4,
+        6,
+        7,
+        3,
+        0,
+        8,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "graph6": "HCrfbzw",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 2,
+      "fixing": 2,
+      "permutation": [
+        3,
+        2,
+        1,
+        0,
+        4,
+        7,
+        8,
+        5,
+        6
+      ]
+    },
+    {
+      "graph6": "HEjf`x]",
+      "n": 9,
+      "v": 1,
+      "W": [
+        1
+      ],
+      "U": [
+        1
+      ],
+      "isomorphisms": 2,
+      "fixing": 2,
+      "permutation": [
+        5,
+        1,
+        3,
+        2,
+        8,
+        0,
+        7,
+        6,
+        4
+      ]
+    },
+    {
+      "graph6": "HQjVRiy",
+      "n": 9,
+      "v": 4,
+      "W": [
+        4
+      ],
+      "U": [
+        4
+      ],
+      "isomorphisms": 24,
+      "fixing": 24,
+      "permutation": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        6,
+        5,
+        8,
+        7
+      ]
+    }
+  ],
+  "family": [
+    {
+      "base_order": 2,
+      "labelled_bases": 2,
+      "without_isolates": 1
+    },
+    {
+      "base_order": 3,
+      "labelled_bases": 8,
+      "without_isolates": 4
+    },
+    {
+      "base_order": 4,
+      "labelled_bases": 64,
+      "without_isolates": 41
+    },
+    {
+      "base_order": 5,
+      "labelled_bases": 1024,
+      "without_isolates": 768
+    }
+  ],
+  "lemma_checks": 1757
+}

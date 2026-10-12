@@ -1,0 +1,197 @@
+[
+  {
+    "W": [],
+    "P": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "U": [],
+    "covered": true,
+    "switches": [
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          3,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          3
+        ],
+        "permutation": [
+          0,
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    ],
+    "graph6": "CF",
+    "n": 4,
+    "degrees": [
+      1,
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "W": [],
+    "P": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "U": [],
+    "covered": true,
+    "switches": [
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          3,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          2
+        ],
+        "permutation": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    ],
+    "graph6": "CN",
+    "n": 4,
+    "degrees": [
+      1,
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "W": [],
+    "P": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "U": [],
+    "covered": true,
+    "switches": [
+      {
+        "vertices": [
+          0,
+          1
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "vertices": [
+          0,
+          3
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "vertices": [
+          1,
+          2
+        ],
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "vertices": [
+          2,
+          3
+        ],
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    ],
+    "graph6": "Cl",
+    "n": 4,
+    "degrees": [
+      2,
+      2,
+      2,
+      2
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "W": [
+      0
+    ],
+    "P": [],
+    "U": [
+      0
+    ],
+    "covered": true,
+    "switches": [
+      {
+        "vertices": [
+          0
+        ],
+        "permutation": [
+          0
+        ]
+      }
+    ],
+    "graph6": "@",
+    "n": 1,
+    "degrees": [
+      0
+    ]
+  }
+]

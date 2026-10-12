@@ -1,0 +1,31 @@
+[
+  {
+    "W": [],
+    "P": [
+      [
+        0,
+        1
+      ]
+    ],
+    "U": [],
+    "covered": true,
+    "switches": [
+      {
+        "vertices": [
+          0,
+          1
+        ],
+        "permutation": [
+          0,
+          1
+        ]
+      }
+    ],
+    "graph6": "A_",
+    "n": 2,
+    "degrees": [
+      1,
+      1
+    ]
+  }
+]

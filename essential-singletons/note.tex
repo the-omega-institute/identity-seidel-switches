@@ -1,0 +1,328 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Essential singleton Seidel switches and a construction from arbitrary graphs},pdfauthor={Haobo Ma and Wenlin Zhang}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ISS}{\mathrm{ISS}}
+\title{Essential singleton Seidel switches and a construction from arbitrary graphs}
+\author{Haobo Ma\\{\small ChronoAI Pte Ltd; The Omega Institute}
+\and Wenlin Zhang\\{\small National University of Singapore; The Omega Institute}}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+A graph is covered if every vertex belongs to an identity Seidel switch
+consisting of a singleton or the endpoints of an edge. We prove that, in a
+covered graph of order $2h+1$, $h\geq1$, with degrees in $\{h,h+1\}$, every vertex
+requiring a singleton switch is the unique singleton-switch vertex and is
+fixed by every isomorphism from its switch to the original graph. From each
+graph $F$ on at least two vertices without isolated vertices we construct a covered graph on
+$2|V(F)|+1$ vertices with exactly one essential singleton, and determine all
+its singleton and edge switches. Nonisomorphic base graphs give
+nonisomorphic constructed graphs; the construction starts with the house.
+An exhaustive check of orders three through eight finds seven covered graphs
+with essential singletons; each has a unique singleton-ISS vertex, fixed by
+every switching isomorphism. The same behavior holds in the sixteen
+essential-singleton cases at order nine.
+\end{abstract}
+
+\section{The fixing question}
+Let $G=(V,E)$ be a finite simple graph. For $S\subseteq V$, its Seidel
+switch $G^S$ toggles precisely the adjacencies between $S$ and $V\setminus S$.
+Following Gervacio~\cite{gervacio}, call $S$ an \emph{identity Seidel switch}
+(ISS) if $G^S\cong G$. A singleton ISS is a vertex-ISS; an edge-ISS consists
+of two adjacent vertices. A graph is \emph{covered} if every vertex lies
+in a singleton ISS or an edge-ISS. Set
+\[
+ W(G)=\{v:\{v\}\text{ is an ISS}\},\qquad
+ E(P(G))=\{xy\in E(G):\{x,y\}\text{ is an ISS}\},
+\]
+and let $U(G)$ be the set of isolated vertices of $P(G)$. In a covered
+graph, $U(G)\subseteq W(G)$, and these vertices require singleton switches.
+All switching isomorphisms below have direction $G^S\longrightarrow G$.
+
+Gervacio~\cite{communication} proposed studying $U(G)$ and asked whether
+in a covered graph every $v\in U(G)$ admits a switching isomorphism
+fixing $v$, suggesting
+$|U(G)|=1$ as a first case and the house as the initial example. He also
+gave the exact criterion that such an isomorphism exists if and only if
+some automorphism of $G-v$ exchanges $N_G(v)$ and
+$V\setminus(\{v\}\cup N_G(v))$. Indeed, restriction gives the required
+automorphism, and extension by $v\mapsto v$ gives the converse.
+
+We answer the question affirmatively when the degrees lie in
+$\{h,h+1\}$, where $|V|=2h+1$, and construct a family with $|U(G)|=1$
+from every graph on at least two vertices without isolated vertices.
+The question for arbitrary
+covered graphs, including arbitrary covered graphs with $|U(G)|=1$,
+remains open. Our arguments use switching covariance and exact degree
+changes; they do not assume that the ISS subsets form a group.
+
+\section{Tracking singleton switches}
+For a permutation $p$ of $V$, write $pG$ for the relabelled graph, so that
+$p(G^S)=(pG)^{p(S)}$. Also $(G^S)^T=G^{S\triangle T}$.
+These identities concern labelled graphs and hold for all subsets.
+
+\begin{lemma}\label{transport}
+Suppose $v\in W(G)$ and $p:G^{\{v\}}\to G$ is an isomorphism. Then
+$p(v)\in W(G)$. In particular, if $W(G)=\{v\}$, every such $p$ fixes $v$.
+Moreover,
+\begin{equation}\label{localW}
+ W(G^{\{v\}})=\{v\}\cup
+ \{x\ne v:\{v,x\}\text{ is an ISS of }G\}.
+\end{equation}
+For every such $v$ and $p$, with $k=|W(G)|$,
+\begin{equation}\label{partnercount}
+ d_{P(G)}(v)=k-1-d_{G[W(G)]}(p(v)).
+\end{equation}
+In particular, if $v\in U(G)$, then $p(v)$ is adjacent to every other
+vertex of $W(G)$. Consequently, if $W(G)$ is independent and $v\in W(G)\cap U(G)$, then
+$W(G)=\{v\}$ and every switching isomorphism at $v$ fixes $v$.
+\end{lemma}
+\begin{proof}
+Covariance gives $(pG)^{\{p(v)\}}=G$, hence
+$pG=G^{\{p(v)\}}$. Thus $G^{\{p(v)\}}\cong G$, proving the first claim.
+Since $G^{\{v\}}\cong G$, for $x\ne v$ the singleton $x$ is an ISS
+of $G^{\{v\}}$ exactly when $G^{\{v,x\}}\cong G$, which proves
+\eqref{localW}; switching $v$ a second time returns $G$.
+
+If $v\in U(G)$, every $x\ne v$ on the right of \eqref{localW} is a
+nonneighbor of $v$ in $G$, and therefore a neighbor in $G^{\{v\}}$.
+The isomorphism $p$ takes $W(G^{\{v\}})$ onto $W(G)$, so $p(v)$ is
+adjacent to every other vertex of $W(G)$. In general, the edge-ISS
+partners of $v$ in $G$ are precisely its nonneighbors in
+$W(G^{\{v\}})\setminus\{v\}$, which proves \eqref{partnercount}.
+An independent graph with a
+vertex adjacent to all its other vertices has just one vertex.
+\end{proof}
+The distinction between $|U(G)|=1$ and $|W(G)|=1$ matters: the lemma
+proves the fixing conclusion from the latter hypothesis. It does not
+identify the two conditions in arbitrary covered graphs.
+If $G[W(G)]$ is complete, \eqref{partnercount} gives $U(G)=W(G)$
+for a covered graph. Hence a covered graph with $|U(G)|=1$ and
+$|W(G)|>1$ must have $|W(G)|\geq3$, and its induced singleton graph
+can be neither complete nor independent.
+
+Switching a singleton changes the edge count by
+$|V|-1-2d_G(v)$. Switching an adjacent pair $xy$ changes it by
+$2(|V|-d_G(x)-d_G(y))$. Thus
+\begin{equation}\label{degrees}
+ v\in W(G)\ \Longrightarrow\ 2d_G(v)=|V|-1,
+ \qquad xy\in E(P(G))\ \Longrightarrow\ d_G(x)+d_G(y)=|V|.
+\end{equation}
+In particular a covered graph with $U(G)\ne\varnothing$ has odd order.
+
+\begin{theorem}\label{twolevels}
+Let $G$ have order $2h+1$, where $h\geq1$, and suppose every degree is
+$h$ or $h+1$. If $v\in W(G)\cap U(G)$, then $W(G)=\{v\}$ and every
+isomorphism $G^{\{v\}}\to G$ fixes $v$. Thus Gervacio's fixing question
+has an affirmative answer for every covered graph with these degrees.
+Furthermore, in any such graph an edge $xy$ is an edge-ISS if and only if
+every other vertex is adjacent to exactly one of $x,y$.
+\end{theorem}
+\begin{proof}
+Take $v\in W(G)$. By \eqref{degrees}, $d_G(v)=h$. A neighbor of $v$
+of degree $h$ would have degree $h-1$ after switching, and a nonneighbor
+of degree $h+1$ would have degree $h+2$. Both are impossible in a graph
+isomorphic to $G$. It follows that
+\begin{equation}\label{neighbors}
+ N_G(v)=\{x:d_G(x)=h+1\}.
+\end{equation}
+Every member of $W(G)$ has degree $h$, so $W(G)$ is independent.
+Lemma~\ref{transport} gives the fixing assertion.
+
+Now let $xy$ be an edge-ISS. For $z\notin\{x,y\}$, put
+$c_z=|N_G(z)\cap\{x,y\}|$. Its new degree is
+$d_G(z)+2-2c_z$. If $c_z=0$ or $2$, this falls outside $\{h,h+1\}$.
+Thus $c_z=1$ for every such $z$. Conversely, if every outside vertex
+sees exactly one endpoint, the transposition $(x\ y)$, fixing all
+other vertices, is an isomorphism $G^{\{x,y\}}\to G$.
+\end{proof}
+
+\section{A family with one essential singleton}
+Let $F$ be any simple graph on $\{1,\ldots,m\}$, $m\geq2$. Construct
+$C(F)$ on
+\[
+ \{v\}\cup A\cup B,\qquad
+ A=\{a_1,\ldots,a_m\},\quad B=\{b_1,\ldots,b_m\},
+\]
+as follows. The vertex $v$ is adjacent to all of $A$ and none of $B$.
+Both $A$ and $B$ induce copies of $F$. Between the copies, put
+\begin{equation}\label{cross}
+ a_i b_j\in E(C(F))\quad\Longleftrightarrow\quad
+ i=j\text{ or }ij\notin E(F).
+\end{equation}
+For distinct indices the second alternative has its usual meaning;
+in particular every $a_i b_i$ is an edge.
+
+\begin{theorem}\label{construction}
+For every $F$ as above, $C(F)$ is covered and has degrees
+\[
+ d(v)=m,\qquad d(a_i)=m+1,\qquad d(b_i)=m.
+\]
+Its singleton ISS vertices are exactly
+\begin{equation}\label{familyW}
+ W(C(F))=\{v\}\cup\{b_i:d_F(i)=0\}.
+\end{equation}
+Its edge-ISS are exactly
+\begin{equation}\label{familyP}
+ \{a_i b_j:N_F(i)=N_F(j)\}
+ \ \cup\ \{v a_i:d_F(i)=0\}.
+\end{equation}
+Consequently,
+\[
+ U(C(F))=
+ \begin{cases}
+ \{v\},&\text{if $F$ has no isolated vertices},\\
+ \varnothing,&\text{otherwise}.
+ \end{cases}
+\]
+If $F$ has no isolated vertices, every switching isomorphism at $v$
+fixes $v$. Nonisomorphic graphs $F$ without isolated vertices yield
+nonisomorphic graphs $C(F)$.
+\end{theorem}
+\begin{proof}
+The degree formulas follow from
+$d_F(i)+(m-d_F(i))=m$. The permutation
+\[
+ \tau(v)=v,\qquad \tau(a_i)=b_i,\qquad \tau(b_i)=a_i
+\]
+is an automorphism of $C(F)-v$ exchanging $A$ and $B$: the internal
+copies agree, and the condition in \eqref{cross} is symmetric in $i,j$.
+Extending it by fixing $v$ certifies the singleton switch at $v$.
+For each $i$, the vertices $a_i,b_i$ are complementary outside their
+pair, including at $v$. Their transposition certifies an edge-ISS.
+These switches cover every vertex.
+
+By \eqref{degrees}, no $a_i$ is a singleton ISS. If $b_i$ is one,
+\eqref{neighbors} requires $N(b_i)=A$, which holds precisely when $i$
+is isolated in $F$. Conversely, for such an $i$, the vertices $v,b_i$
+have identical open neighborhoods $A$, so their transposition is an
+automorphism of $C(F)$. Relabelling the singleton ISS at $v$ therefore
+gives one at $b_i$. This proves \eqref{familyW}.
+
+By Theorem~\ref{twolevels}, edge-ISS are exactly the adjacent pairs
+complementary outside their pair. The degree sum in \eqref{degrees}
+restricts them to $a_i b_j$ or $v a_i$. For an adjacent pair $a_i b_j$ with $i\ne j$, we have
+$ij\notin E(F)$. For each $k\notin\{i,j\}$, complementarity at
+$a_k$ (equivalently, at $b_k$) requires
+$\mathbf{1}_{ik\in E(F)}=\mathbf{1}_{jk\in E(F)}$. At $v,a_j,b_i$
+complementarity then holds automatically. Thus the two adjacency rows
+agree, and conversely their equality gives complementarity everywhere.
+For $i=j$ complementarity was already checked. This gives
+$N_F(i)=N_F(j)$; if $i\ne j$
+it also implies $ij\notin E(F)$, so the proposed pair is adjacent.
+For $v a_i$, complementarity requires $a_i$ to have no neighbor in
+$A\setminus\{a_i\}$ and all of $B$ as neighbors, which is exactly
+$d_F(i)=0$. This proves \eqref{familyP}.
+
+Every $a_i,b_i$ lies in the edge-ISS $a_i b_i$. Formula
+\eqref{familyP} decides whether $v$ has an edge-ISS partner, giving
+the assertion about $U$. If $F$ has no isolated vertices,
+\eqref{familyW} and Lemma~\ref{transport} show that every switching
+isomorphism at $v$ fixes it. Finally, any isomorphism between two such
+constructed graphs must send their unique singleton-ISS vertices to
+each other, hence their neighborhoods to each other. Those
+neighborhoods induce the respective base graphs $F$.
+\end{proof}
+
+Taking $F=K_2$ gives the house: $C(F)-v$ is a four-cycle, and $v$ is
+joined to the endpoints of one of its edges. Taking $F=K_m$ proves
+existence with $|U|=1$ at every odd order at least five. More generally,
+if $a_m$ denotes the number of isomorphism classes of $m$-vertex graphs
+without isolated vertices, the theorem gives at least $a_m$ covered
+isomorphism classes of order $2m+1$ with $|U|=1$.
+
+The degree-sum test does not explain essentiality in this family.
+When $F$ has no isolated vertices, each candidate $v a_i$ passes that
+test. Choose $j\in N_F(i)$. The vertex $a_j$ is a common neighbor of
+$v,a_i$, so switching that pair changes its degree from $m+1$ to
+$m-1$, which is absent from $C(F)$. This explicitly rejects every
+possible edge partner of $v$.
+
+\section{Finite catalogues and the remaining question}
+We recomputed all singleton and adjacent-pair switches for orders three
+through eight, using the NetworkX distribution~\cite{networkxatlas} of the
+Read--Wilson atlas~\cite{atlas} through order seven and McKay's
+catalogue~\cite{mckay} at order eight. These calculations give:
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+Order & Input classes & Covered & $U=\varnothing$ & $|U|=1$\\
+\midrule
+3 & 4 & 1 & 1 & 0\\
+4 & 11 & 3 & 3 & 0\\
+5 & 34 & 3 & 2 & 1\\
+6 & 156 & 11 & 11 & 0\\
+7 & 1044 & 10 & 4 & 6\\
+8 & 12346 & 35 & 35 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+No covered graph in this range has $|U|\geq2$. In all seven with
+$U\ne\varnothing$, the unique essential vertex is also the unique
+singleton-ISS vertex. Thus Lemma~\ref{transport} explains why every
+switching isomorphism there fixes it. The following table gives graph6
+labels, the essential vertex (numbered from zero), and one certificate.
+The tuple lists the images of vertices in order.
+\begin{center}
+\small
+\begin{tabular}{lllr}
+\toprule
+Graph6 & Vertex & Fixing permutation & All isomorphisms\\
+\midrule
+\texttt{Dlc} & 4 & $(1,0,3,2,4)$ & 2\\
+\texttt{FcBzo} & 0 & $(0,2,1,4,3,6,5)$ & 4\\
+\texttt{FfxbO} & 0 & $(0,2,1,5,6,3,4)$ & 1\\
+\texttt{FllHo} & 0 & $(0,5,4,6,2,1,3)$ & 1\\
+\texttt{FBfnO} & 0 & $(0,5,6,4,3,1,2)$ & 4\\
+\texttt{F\textasciigrave urg} & 2 & $(3,5,2,1,6,4,0)$ & 6\\
+\texttt{FHN]w} & 1 & $(2,1,0,5,6,3,4)$ & 4\\
+\bottomrule
+\end{tabular}
+\end{center}
+Each successful switch was verified on every vertex pair. Negative
+isomorphism decisions use exhaustive degree-compatible bijection search.
+For the seven essential cases, a second check tested all $n!$ permutations
+and confirmed the displayed counts and the fixing property. Catalogue
+completeness uses the cited input catalogues. As a separate check of
+Theorem~\ref{construction}, all $1098$ labelled base graphs of orders two
+through five were constructed and their complete singleton and edge-ISS
+lists compared with \eqref{familyW}--\eqref{familyP}.
+
+An exhaustive supplementary check of McKay's $274668$ graphs of order
+nine gives $33$ covered graphs: $17$ with $U=\varnothing$ and $16$ with
+$U=W=\{v\}$. In all sixteen, every switching isomorphism at $v$ fixes
+$v$. No covered graph of order nine has $|U|\geq2$. At the small orders
+excluded from the tables, the one-vertex graph has $U=W=V$ and its
+switch is the identity; the only covered graph of order two is $K_2$,
+with $U=\varnothing$.
+
+\newpage
+These finite results leave two structural questions. Does every covered
+graph with $|U|=1$ have a unique singleton-ISS vertex, or at least a fixing
+switching isomorphism? Can a covered graph have $|U|\geq2$, and if so,
+which graphs can occur as $G[U]$? The construction answers the existence
+problem for $|U|=1$ at every odd order at least five, while the
+fixing question beyond Theorem~\ref{twolevels} remains unresolved.
+
+\begin{thebibliography}{9}
+\bibitem{gervacio} S. V. Gervacio, \emph{On identity Seidel switches},
+arXiv:2601.04530v1, 2026. \url{https://arxiv.org/abs/2601.04530v1}.
+\bibitem{communication} S. V. Gervacio, private communication,
+12 October 2026.
+\bibitem{atlas} R. C. Read and R. J. Wilson, \emph{An Atlas of Graphs},
+Oxford University Press, 1998.
+\bibitem{networkxatlas} NetworkX developers, \emph{Graph atlas},
+\texttt{graph\_atlas\_g} documentation; atlas data version 3.4.2.
+\url{https://networkx.org/documentation/stable/reference/generated/networkx.generators.atlas.graph_atlas_g.html}.
+\bibitem{mckay} B. D. McKay, \emph{Graphs}, small graph data catalogue.
+\url{https://users.cecs.anu.edu.au/~bdm/data/graphs.html}.
+\end{thebibliography}
+\end{document}
